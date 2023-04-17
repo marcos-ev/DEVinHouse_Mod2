@@ -1,0 +1,15 @@
+C:\Users\marco\Documents\DEVinHouse_Mod2\M2S02-ex4\bin\Debug\net7.0\M2S02-ex4.exe
+C:\Users\marco\Documents\DEVinHouse_Mod2\M2S02-ex4\bin\Debug\net7.0\M2S02-ex4.deps.json
+C:\Users\marco\Documents\DEVinHouse_Mod2\M2S02-ex4\bin\Debug\net7.0\M2S02-ex4.runtimeconfig.json
+C:\Users\marco\Documents\DEVinHouse_Mod2\M2S02-ex4\bin\Debug\net7.0\M2S02-ex4.dll
+C:\Users\marco\Documents\DEVinHouse_Mod2\M2S02-ex4\bin\Debug\net7.0\M2S02-ex4.pdb
+C:\Users\marco\Documents\DEVinHouse_Mod2\M2S02-ex4\obj\Debug\net7.0\M2S02-ex4.csproj.AssemblyReference.cache
+C:\Users\marco\Documents\DEVinHouse_Mod2\M2S02-ex4\obj\Debug\net7.0\M2S02-ex4.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\marco\Documents\DEVinHouse_Mod2\M2S02-ex4\obj\Debug\net7.0\M2S02-ex4.AssemblyInfoInputs.cache
+C:\Users\marco\Documents\DEVinHouse_Mod2\M2S02-ex4\obj\Debug\net7.0\M2S02-ex4.AssemblyInfo.cs
+C:\Users\marco\Documents\DEVinHouse_Mod2\M2S02-ex4\obj\Debug\net7.0\M2S02-ex4.csproj.CoreCompileInputs.cache
+C:\Users\marco\Documents\DEVinHouse_Mod2\M2S02-ex4\obj\Debug\net7.0\M2S02-ex4.dll
+C:\Users\marco\Documents\DEVinHouse_Mod2\M2S02-ex4\obj\Debug\net7.0\refint\M2S02-ex4.dll
+C:\Users\marco\Documents\DEVinHouse_Mod2\M2S02-ex4\obj\Debug\net7.0\M2S02-ex4.pdb
+C:\Users\marco\Documents\DEVinHouse_Mod2\M2S02-ex4\obj\Debug\net7.0\M2S02-ex4.genruntimeconfig.cache
+C:\Users\marco\Documents\DEVinHouse_Mod2\M2S02-ex4\obj\Debug\net7.0\ref\M2S02-ex4.dll
