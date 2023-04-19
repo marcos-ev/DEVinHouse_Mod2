@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace SomaNumeros
+namespace SomaNumerosReais
 {
 class Program
 {

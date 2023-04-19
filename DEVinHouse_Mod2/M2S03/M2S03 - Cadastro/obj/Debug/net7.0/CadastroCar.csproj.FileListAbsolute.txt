@@ -1,0 +1,15 @@
+C:\Users\marco\Documents\DEVinHouse_Mod2\DEVinHouse_Mod2\M2S03\M2S03 - Cadastro\obj\Debug\net7.0\CadastroCar.csproj.AssemblyReference.cache
+C:\Users\marco\Documents\DEVinHouse_Mod2\DEVinHouse_Mod2\M2S03\M2S03 - Cadastro\obj\Debug\net7.0\CadastroCar.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\marco\Documents\DEVinHouse_Mod2\DEVinHouse_Mod2\M2S03\M2S03 - Cadastro\obj\Debug\net7.0\CadastroCar.AssemblyInfoInputs.cache
+C:\Users\marco\Documents\DEVinHouse_Mod2\DEVinHouse_Mod2\M2S03\M2S03 - Cadastro\obj\Debug\net7.0\CadastroCar.AssemblyInfo.cs
+C:\Users\marco\Documents\DEVinHouse_Mod2\DEVinHouse_Mod2\M2S03\M2S03 - Cadastro\obj\Debug\net7.0\CadastroCar.csproj.CoreCompileInputs.cache
+C:\Users\marco\Documents\DEVinHouse_Mod2\DEVinHouse_Mod2\M2S03\M2S03 - Cadastro\bin\Debug\net7.0\CadastroCar.exe
+C:\Users\marco\Documents\DEVinHouse_Mod2\DEVinHouse_Mod2\M2S03\M2S03 - Cadastro\bin\Debug\net7.0\CadastroCar.deps.json
+C:\Users\marco\Documents\DEVinHouse_Mod2\DEVinHouse_Mod2\M2S03\M2S03 - Cadastro\bin\Debug\net7.0\CadastroCar.runtimeconfig.json
+C:\Users\marco\Documents\DEVinHouse_Mod2\DEVinHouse_Mod2\M2S03\M2S03 - Cadastro\bin\Debug\net7.0\CadastroCar.dll
+C:\Users\marco\Documents\DEVinHouse_Mod2\DEVinHouse_Mod2\M2S03\M2S03 - Cadastro\bin\Debug\net7.0\CadastroCar.pdb
+C:\Users\marco\Documents\DEVinHouse_Mod2\DEVinHouse_Mod2\M2S03\M2S03 - Cadastro\obj\Debug\net7.0\CadastroCar.dll
+C:\Users\marco\Documents\DEVinHouse_Mod2\DEVinHouse_Mod2\M2S03\M2S03 - Cadastro\obj\Debug\net7.0\refint\CadastroCar.dll
+C:\Users\marco\Documents\DEVinHouse_Mod2\DEVinHouse_Mod2\M2S03\M2S03 - Cadastro\obj\Debug\net7.0\CadastroCar.pdb
+C:\Users\marco\Documents\DEVinHouse_Mod2\DEVinHouse_Mod2\M2S03\M2S03 - Cadastro\obj\Debug\net7.0\CadastroCar.genruntimeconfig.cache
+C:\Users\marco\Documents\DEVinHouse_Mod2\DEVinHouse_Mod2\M2S03\M2S03 - Cadastro\obj\Debug\net7.0\ref\CadastroCar.dll
