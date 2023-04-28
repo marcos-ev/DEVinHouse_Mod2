@@ -41,81 +41,99 @@ namespace CadastroCar
 
         static void Main(string[] args)
         {
-            // criando as instâncias da classe Proprietario com diferentes parâmetros
-            var Proprietario1 = new Proprietario("Ana Luiza Oliveira", "987.654.321-00", "(48) 99999-8888");
-            var Proprietario2 = new Proprietario("Fernando Silva Santos", "123.456.789-00", "(48) 77777-6666");
-            var Proprietario3 = new Proprietario("Lucas Pereira Souza", "111.222.333-44", "(48) 33333-2222");
+            while (true)
+            {
+                Menu(args);
 
-            // criando as instâncias da classe Carro com diferentes parâmetros e Proprietarios
-            var carro1 = new Carro("Volkswagen", "Polo", "ABC-1234", "Azul", Proprietario1);
-            var carro2 = new Carro("Chevrolet", "Onix", "DEF-5678", "Prata", Proprietario2);
-            var carro3 = new Carro("Toyota", "Corolla", "GHI-9012", "Preto", Proprietario3);
-
-            // adicionando as instâncias de Carro na lista
-            carros.Add(carro1);
-            carros.Add(carro2);
-            carros.Add(carro3);
-
-            CadastrarNovoCarro();
-
-            // restante do código aqui
+                Console.WriteLine("\nPressione qualquer tecla para continuar...");
+                Console.ReadKey();
+                Console.Clear();
+            }
         }
 
-       static void CadastrarNovoCarro()
-{
-    // Obtém os atributos do proprietário via Console.ReadLine()
-    Console.WriteLine("Cadastro de proprietário:");
-    Console.Write("Nome: ");
-    string nomeProprietario = Console.ReadLine();
-    Console.Write("CPF: ");
-    string cpfProprietario = Console.ReadLine();
-    Console.Write("Telefone: ");
-    string telefoneProprietario = Console.ReadLine();
-    
-    // Cria a instância de Proprietario com os valores obtidos
-    Proprietario novoProprietario = new Proprietario(nomeProprietario, cpfProprietario, telefoneProprietario);
-    
-    // Obtém os atributos do carro via Console.ReadLine()
-    Console.WriteLine("\nCadastro de carro:");
-    Console.Write("Marca: ");
-    string marcaCarro = Console.ReadLine();
-    Console.Write("Modelo: ");
-    string modeloCarro = Console.ReadLine();
-    Console.Write("Placa: ");
-    string placaCarro = Console.ReadLine();
-    Console.Write("Cor: ");
-    string corCarro = Console.ReadLine();
-    
-    // Cria a instância de Carro com os valores obtidos
-    Carro novoCarro = new Carro(marcaCarro, modeloCarro, placaCarro, corCarro, novoProprietario);
-    
-    // Adiciona a instância de Carro na lista de carros
-    carros.Add(novoCarro);
-    
-    Console.WriteLine("\nNovo carro cadastrado com sucesso!");
-} 
+        static void CadastrarNovoCarro()
+        {
+            // Obtém os atributos do proprietário via Console.ReadLine()
+            Console.WriteLine("Cadastro de proprietário:");
+            Console.Write("Nome: ");
+            string nomeProprietario = Console.ReadLine();
+            Console.Write("CPF: ");
+            string cpfProprietario = Console.ReadLine();
+            Console.Write("Telefone: ");
+            string telefoneProprietario = Console.ReadLine();
 
-static void ListarCarros()
-{
-    Console.WriteLine("Lista de carros cadastrados:\n");
-    
-    foreach (var carro in carros)
-    {
-        Console.WriteLine($"Marca: {carro.Marca}");
-        Console.WriteLine($"Modelo: {carro.Modelo}");
-        Console.WriteLine($"Placa: {carro.Placa}");
-        Console.WriteLine($"Cor: {carro.Cor}");
-        Console.WriteLine($"Proprietário:");
-        Console.WriteLine($"Nome: {carro.Proprietario.Nome}");
-        Console.WriteLine($"CPF: {carro.Proprietario.CPF}");
-        Console.WriteLine($"Telefone: {carro.Proprietario.Telefone}");
-        Console.WriteLine("-----------------------------");
+            // Cria a instância de Proprietario com os valores obtidos
+            Proprietario novoProprietario = new Proprietario(nomeProprietario, cpfProprietario, telefoneProprietario);
+
+            // Obtém os atributos do carro via Console.ReadLine()
+            Console.WriteLine("\nCadastro de carro:");
+            Console.Write("Marca: ");
+            string marcaCarro = Console.ReadLine();
+            Console.Write("Modelo: ");
+            string modeloCarro = Console.ReadLine();
+            Console.Write("Placa: ");
+            string placaCarro = Console.ReadLine();
+            Console.Write("Cor: ");
+            string corCarro = Console.ReadLine();
+
+            // Cria a instância de Carro com os valores obtidos
+            Carro novoCarro = new Carro(marcaCarro, modeloCarro, placaCarro, corCarro, novoProprietario);
+
+            // Adiciona a instância de Carro na lista de carros
+            carros.Add(novoCarro);
+
+            Console.WriteLine("\nNovo carro cadastrado com sucesso!");
+        }
+
+        static void ListarCarros()
+        {
+            Console.WriteLine("Lista de carros cadastrados:\n");
+
+            foreach (var carro in carros)
+            {
+                Console.WriteLine($"Marca: {carro.Marca}");
+                Console.WriteLine($"Modelo: {carro.Modelo}");
+                Console.WriteLine($"Placa: {carro.Placa}");
+                Console.WriteLine($"Cor: {carro.Cor}");
+                Console.WriteLine($"Proprietário:");
+                Console.WriteLine($"Nome: {carro.Proprietario.Nome}");
+                Console.WriteLine($"CPF: {carro.Proprietario.CPF}");
+                Console.WriteLine($"Telefone: {carro.Proprietario.Telefone}");
+                Console.WriteLine("-----------------------------");
+            }
+        }
+
+         static void Menu(string[] args)
+        {
+            while (true)
+            {
+                Console.WriteLine("Bem-vindo ao sistema de cadastro de carros. Escolha uma opção:");
+                Console.WriteLine("1 - Cadastrar Carro");
+                Console.WriteLine("2 - Consultar Carros");
+                Console.WriteLine("3 - Sair");
+
+                var opcao = Console.ReadLine();
+
+                switch (opcao)
+                {
+                    case "1":
+                        CadastrarNovoCarro();
+                        break;
+                    case "2":
+                        ListarCarros();
+                        break;
+                    case "3":
+                        Console.WriteLine("Encerrando o programa...");
+                        return;
+                    default:
+                        Console.WriteLine("Opção inválida. Tente novamente.");
+                        break;
+                }
+
+                Console.WriteLine("\nPressione qualquer tecla para continuar...");
+                Console.ReadKey();
+                Console.Clear();
+            }
+        }
     }
 }
-
- }
-
- 
-  }
-
-  
