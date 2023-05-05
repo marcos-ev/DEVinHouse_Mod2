@@ -1,0 +1,15 @@
+C:\Users\marco\Documents\DEVinHouse_Mod2\DEVinHouse_Mod2\M204\M204-ex7\bin\Debug\net7.0\M204-ex7.exe
+C:\Users\marco\Documents\DEVinHouse_Mod2\DEVinHouse_Mod2\M204\M204-ex7\bin\Debug\net7.0\M204-ex7.deps.json
+C:\Users\marco\Documents\DEVinHouse_Mod2\DEVinHouse_Mod2\M204\M204-ex7\bin\Debug\net7.0\M204-ex7.runtimeconfig.json
+C:\Users\marco\Documents\DEVinHouse_Mod2\DEVinHouse_Mod2\M204\M204-ex7\bin\Debug\net7.0\M204-ex7.dll
+C:\Users\marco\Documents\DEVinHouse_Mod2\DEVinHouse_Mod2\M204\M204-ex7\bin\Debug\net7.0\M204-ex7.pdb
+C:\Users\marco\Documents\DEVinHouse_Mod2\DEVinHouse_Mod2\M204\M204-ex7\obj\Debug\net7.0\M204-ex7.csproj.AssemblyReference.cache
+C:\Users\marco\Documents\DEVinHouse_Mod2\DEVinHouse_Mod2\M204\M204-ex7\obj\Debug\net7.0\M204-ex7.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\marco\Documents\DEVinHouse_Mod2\DEVinHouse_Mod2\M204\M204-ex7\obj\Debug\net7.0\M204-ex7.AssemblyInfoInputs.cache
+C:\Users\marco\Documents\DEVinHouse_Mod2\DEVinHouse_Mod2\M204\M204-ex7\obj\Debug\net7.0\M204-ex7.AssemblyInfo.cs
+C:\Users\marco\Documents\DEVinHouse_Mod2\DEVinHouse_Mod2\M204\M204-ex7\obj\Debug\net7.0\M204-ex7.csproj.CoreCompileInputs.cache
+C:\Users\marco\Documents\DEVinHouse_Mod2\DEVinHouse_Mod2\M204\M204-ex7\obj\Debug\net7.0\M204-ex7.dll
+C:\Users\marco\Documents\DEVinHouse_Mod2\DEVinHouse_Mod2\M204\M204-ex7\obj\Debug\net7.0\refint\M204-ex7.dll
+C:\Users\marco\Documents\DEVinHouse_Mod2\DEVinHouse_Mod2\M204\M204-ex7\obj\Debug\net7.0\M204-ex7.pdb
+C:\Users\marco\Documents\DEVinHouse_Mod2\DEVinHouse_Mod2\M204\M204-ex7\obj\Debug\net7.0\M204-ex7.genruntimeconfig.cache
+C:\Users\marco\Documents\DEVinHouse_Mod2\DEVinHouse_Mod2\M204\M204-ex7\obj\Debug\net7.0\ref\M204-ex7.dll
