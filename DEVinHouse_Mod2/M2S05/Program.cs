@@ -1,9 +1,8 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 
 namespace FullStackBank
 {
-    // Classe abstrata Cliente, que serve de base para as classes PessoaFisica e PessoaJuridica
     public abstract class Cliente
     {
         public int NumeroConta { get; set; }
@@ -16,7 +15,6 @@ namespace FullStackBank
         }
     }
 
-    // Classe PessoaFisica, que herda da classe Cliente
     public class PessoaFisica : Cliente
     {
         public string CPF { get; set; }
@@ -37,9 +35,20 @@ namespace FullStackBank
 
             return idade >= 18;
         }
-    
+    }
 
-    // Classe ClienteService, que gerencia os clientes do banco
+    public class PessoaJuridica : Cliente
+    {
+        public string CNPJ { get; set; }
+        public string RazaoSocial { get; set; }
+
+        public override void ResumoCliente()
+        {
+            base.ResumoCliente();
+            Console.WriteLine($"Razão Social: {RazaoSocial}\nCNPJ: {CNPJ}");
+        }
+    }
+
     public class ClienteService
     {
         private static List<Cliente> clientes = new List<Cliente>();
@@ -98,7 +107,26 @@ namespace FullStackBank
 
         private static void CriarContaPessoaJuridica()
         {
-            // Implementação para criar conta de pessoa jurídica
+            Console.WriteLine("Criando conta para pessoa jurídica...");
+            PessoaJuridica cliente = new PessoaJuridica();
+
+            Console.Write("Informe o número da conta: ");
+            cliente.NumeroConta = int.Parse(Console.ReadLine());
+
+            Console.Write("Informe o saldo inicial: ");
+            cliente.Saldo = decimal.Parse(Console.ReadLine());
+
+            Console.Write("Informe o endereço: ");
+            cliente.Endereco = Console.ReadLine();
+
+            Console.Write("Informe o CNPJ: ");
+            cliente.CNPJ = Console.ReadLine();
+
+            Console.Write("Informe a razão social: ");
+            cliente.RazaoSocial = Console.ReadLine();
+
+            clientes.Add(cliente);
+            Console.WriteLine("Conta criada com sucesso!");
         }
 
         public static Cliente BuscarClientePorNumeroDeConta(int numeroConta)
@@ -115,7 +143,7 @@ namespace FullStackBank
             return null;
         }
 
-    public static void ExibirClientes()
+        public static void ExibirClientes()
         {
             if (clientes.Count == 0)
             {
@@ -131,9 +159,8 @@ namespace FullStackBank
                 }
             }
         }
-  
+    }
 
-    // Classe Program, que contém o método Main
     class Program
     {
         static void Main(string[] args)
@@ -175,98 +202,6 @@ namespace FullStackBank
 
                 Console.WriteLine();
             }
-            }
-            }
-            
-public class PessoaJuridica : Cliente
-{
-    public string CNPJ { get; set; }
-    public string RazaoSocial { get; set; }
-
-    public override void ResumoCliente()
-    {
-        base.ResumoCliente();
-        Console.WriteLine($"Razão Social: {RazaoSocial}\nCNPJ: {CNPJ}");
-    }
-
-    private static void CriarContaPessoaJuridica()
-{
-    Console.WriteLine("Criando conta para pessoa jurídica...");
-    PessoaJuridica cliente = new PessoaJuridica();
-
-    Console.Write("Informe o número da conta: ");
-    cliente.NumeroConta = int.Parse(Console.ReadLine());
-
-    Console.Write("Informe o saldo inicial: ");
-    cliente.Saldo = decimal.Parse(Console.ReadLine());
-
-    Console.Write("Informe o endereço: ");
-    cliente.Endereco = Console.ReadLine();
-
-    Console.Write("Informe o CNPJ: ");
-    cliente.CNPJ = Console.ReadLine();
-
-    Console.Write("Informe a razão social: ");
-    cliente.RazaoSocial = Console.ReadLine();
-
-    clientes.Add(cliente);
-    Console.WriteLine("Conta criada com sucesso!");
-}
-
-
-public interface IClienteService
-{
-    void CriarConta();
-    Cliente BuscarClientePorNumeroDeConta(int numeroConta);
-    void ExibirClientes();
-
-    static void Menu(string[] args)
-    {
-        while (true)
-        {
-            Console.WriteLine("Bem-vindo ao Full Stack Bank!");
-            Console.WriteLine("O que você gostaria de fazer?");
-            Console.WriteLine("1 - Abrir Conta");
-            Console.WriteLine("2 - Consultar Conta");
-            Console.WriteLine("3 - Listar Todas as Contas");
-            Console.WriteLine("4 - Sair");
-
-            string opcao = Console.ReadLine();
-
-            switch (opcao)
-            {
-                case "1":
-                    ClienteService.CriarConta();
-                    break;
-                case "2":
-                    Console.Write("Informe o número da conta: ");
-                    int numeroConta = int.Parse(Console.ReadLine());
-                    Cliente cliente = ClienteService.BuscarClientePorNumeroDeConta(numeroConta);
-                    if (cliente != null)
-                    {
-                        cliente.ResumoCliente();
-                    }
-                    break;
-                case "3":
-                    ClienteService.ExibirClientes();
-                    break;
-                case "4":
-                    Console.WriteLine("Obrigado por usar o Full Stack Bank!");
-                    return;
-                default:
-                    Console.WriteLine("Opção inválida!");
-                    break;
-            }
-
-            Console.WriteLine();
         }
     }
 }
-}
-}
-}
-}
-
-
-
-
